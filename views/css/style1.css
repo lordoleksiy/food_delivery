@@ -1,27 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-header{
-    display: flex;
-    align-items: center;
-    height: 10vh;
-    font-size: 16px;
-}
-header :first-child{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 30px;
-    border-right: black 2px solid;
-}
-header a{
-    padding-left: 30px;
-}
-h1{
-    box-shadow: 10px;
-    border: 1px solid black;
-}
-
 .main-content{
     height: 85vh
 }
@@ -68,11 +44,6 @@ h1{
     padding: 10px;
     display: inline-block;
     margin: 10px;
-    display: grid;
-    grid-template: 
-            a a a
-            b auto
-            c  auto d /1fr 1fr 1fr;
 }
 .item-div img{
     width: 90%;

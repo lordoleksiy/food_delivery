@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    font-size: 16px;
+}
+header :first-child{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    border-right: black 2px solid;
+}
+header a{
+    padding-left: 30px;
+}

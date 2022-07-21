@@ -1,0 +1,61 @@
+.main-content{
+    height: 65vh
+}
+
+.user-data{
+    float: left;
+    margin-left: 4%;
+    width: 45%;
+    height: 100%;
+    border: 1px black solid;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+.items{    
+    width: 45%;
+    height: 100%;
+    margin-left: 51%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.user-data div{
+    padding: 20px;
+}
+.user-data div p{
+    padding-bottom: 5px;
+}
+.user-data div input{
+    width: 100%;
+    border-radius: 10px;
+    height: 20px;
+    text-align: center;
+}
+
+footer{
+    margin-top: 40px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    align-items: center;
+}
+footer input{
+    border-radius: 15px;
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 60px;
+}
+
+footer p{
+    margin-right: 80px;
+}
