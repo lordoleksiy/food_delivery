@@ -1,21 +1,22 @@
 import express from "express";
 import  path  from "path";
 import mongoose from "mongoose";
-import Shop from "./models/shop.js"
 
 const app = express()
 
+app.set("view engine", "ejs")
+app.use(express.static(path.resolve() + '\\demo'))
 app.use(express.json())
-app.use(express.static(path.resolve(path.resolve(), "views")))
+app.set("views", path.resolve(path.resolve(), "ejs"))
 
 const PORT = 3000;
 
-app.post("/add_shop", (req, res)=>{
-    const {name} = req.body
-    new Shop({name})
-    .save()
-    .then((result)=>{res.send(result)})
-    .catch((error)=>{console.log(error)})
+app.get('/', (req, res)=>{
+    res.render("index")
+})
+
+app.get('/cart', (req, res)=>{
+    res.render("cart")
 })
 
 function launch(){
