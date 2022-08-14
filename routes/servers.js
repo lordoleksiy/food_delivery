@@ -1,13 +1,8 @@
-import {Router} from "express";
-import Shop from "./models/shop.js";
-const router = Router();
+import express from "express";
+import shopController from "../controllers/shopController.js"
+const router = express.Router()
 
-router.post("/add_shop", (req, res)=>{
-    const {name} = req.body
-    new Shop({name})
-    .save()
-    .then((result)=>{res.send(result)})
-    .catch((error)=>{console.log(error)})
-})
+router.get("/shop/get", shopController.getShops)
+router.post("/add_shop", shopController.addShop)
 
 export default router;

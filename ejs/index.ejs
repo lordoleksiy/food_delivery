@@ -16,8 +16,9 @@
     <div class="main-content">
         <div class="shops">
             <p><b>Shops:</b></p>
-            <div>Mc Donald's</div>
-            <div>CaefSi</div>
+            <% for(var i=0; i<shops.length;i++) {%>
+                <div><%= shops[i].name %></div>
+            <%} %>
         </div>
         <div class="items">
             <div class="item-div">
