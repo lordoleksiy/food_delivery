@@ -1,3 +1,8 @@
+header p{
+    margin-left: 70%;
+    font-size: 18px;
+}
+
 .main-content{
     height: 85vh
 }
@@ -23,6 +28,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .items{    
@@ -30,19 +36,20 @@
     height: 100%;
     margin-left: 35%;
     border: 2px solid black;
-    display: flex;
-    justify-content: space-around;
     overflow-y: scroll;
 }
 
 .item-div{
+    float: left;
+    margin-left: 50px;
     width: 35%;
     height: 25vh;
     border: 1px black solid;
     border-radius: 10px;
     padding: 10px;
-    display: inline-block;
-    margin: 10px;
+    margin-left: 8.5%;
+    margin-top: 10px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -56,4 +63,8 @@
     height: 55%;
     border-radius: 5px;
     margin-bottom: 10px;
+}
+
+.item-div input{
+    cursor: pointer;
 }
