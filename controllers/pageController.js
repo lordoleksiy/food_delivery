@@ -20,6 +20,10 @@ class pageController{
             res.send(items)
         })
     }
+
+    postOrder = (req, res) =>{
+        console.log(req.body)
+    }
 }
 
 export default new pageController()

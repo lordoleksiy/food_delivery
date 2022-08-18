@@ -9,5 +9,6 @@ router.post("/add_shop", shopController.addShop)
 
 router.get("/renderItems", pageController.renderItems)
 router.post("/item/add", itemController.addItem)
+router.post("/order", pageController.postOrder)
 
 export default router;
